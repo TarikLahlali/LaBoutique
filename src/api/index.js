@@ -1,5 +1,5 @@
-export const url = "https://laboutique-node.herokuapp.com";
 // export const url = "http://localhost:5000/api";
+export const url = "https://laboutique-node.herokuapp.com/api";
 
 export const setHeaders = () => {
   const headers = {
