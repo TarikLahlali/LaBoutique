@@ -1,0 +1,42 @@
+* {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+input {
+  all: unset;
+}
+
+     /* Unvisited link  */
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+button:visited, a:visited {color:none;} /* Visited link    */
+a:hover {color:none;}   /* Mouse over link */
+a:active {color:none;} 
+
+/* button:focus{
+  outline:0;
+} */
