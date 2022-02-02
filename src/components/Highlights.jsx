@@ -104,7 +104,7 @@ const Carousel = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/products");
+        const res = await axios.get("https://laboutique-node.herokuapp.com/api/products");
         
         const prods = [res.data[0],res.data[25],res.data[4],res.data[27],res.data[5],res.data[28],res.data[21],res.data[26]];
         setProducts(prods);

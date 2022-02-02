@@ -35,7 +35,7 @@ console.log(filteredProducts);
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/products?category=${cat}`);
+        const res = await axios.get(`https://laboutique-node.herokuapp.com/api/products?category=${cat}`);
         setProducts(res.data);
       } catch (err) {}
     };
