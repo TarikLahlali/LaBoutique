@@ -68,6 +68,10 @@ const Button = styled.button`
       background-color: #292929;
       color: white;
     }
+    @media (max-width : 450px) {
+      margin-bottom : 10vh;
+  
+  } ;
 `
 
 

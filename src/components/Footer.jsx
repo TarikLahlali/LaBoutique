@@ -110,6 +110,23 @@ const Footer = () => {
     <footer>
     <FooterContainer>
       <FooterRow>
+      <FooterCol>
+          <FooterTitle>Om oss</FooterTitle>
+          <ul>
+            <FooterLi>
+              <FooterLinks to="/aboutUs">Om oss</FooterLinks>
+            </FooterLi>
+            <FooterLi>
+              <FooterLinks to="/findus">Presse</FooterLinks>
+            </FooterLi>
+            <FooterLi>
+              <FooterLinks to="/aboutUs">Inverstor Relations</FooterLinks>
+            </FooterLi>
+            <FooterLi>
+              <FooterLinks to="/findus">Ledige stillinger</FooterLinks>
+            </FooterLi>
+          </ul>
+        </FooterCol>
         <FooterCol>
           <FooterTitle>Hjelp og Kontakt</FooterTitle>
           <ul>
@@ -128,23 +145,7 @@ const Footer = () => {
             </FooterLi>
           </ul>
         </FooterCol>
-        <FooterCol>
-          <FooterTitle>Om oss</FooterTitle>
-          <ul>
-            <FooterLi>
-              <FooterLinks to="/aboutUs">Om oss</FooterLinks>
-            </FooterLi>
-            <FooterLi>
-              <FooterLinks to="/findus">Presse</FooterLinks>
-            </FooterLi>
-            <FooterLi>
-              <FooterLinks to="/aboutUs">Inverstor Relations</FooterLinks>
-            </FooterLi>
-            <FooterLi>
-              <FooterLinks to="/findus">Ledige stillinger</FooterLinks>
-            </FooterLi>
-          </ul>
-        </FooterCol>
+      
       </FooterRow>
 
         <FooterColSubscribe>

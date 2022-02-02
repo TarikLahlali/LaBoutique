@@ -44,17 +44,22 @@ const HighlightsSection = styled.section`
   text-align: center;
   letter-spacing: 0.5px;
   margin-bottom: 30px;
+  
 
 `
 
 const CarouselContainer = styled.div`
-  width: 95vw;
+  width: 80vw;
   margin: 0 auto;
+
   /* max-height:500px; */
   background-color: #F3F3F3;
   @media (max-width : 1200px) {
    max-height: 500px;
-    width: 90vw;
+    width: 80vw;
+  } ;
+  @media (max-width : 450px) {
+      /* margin: 0 10px 0 20px; */
   } ;
  
 `
