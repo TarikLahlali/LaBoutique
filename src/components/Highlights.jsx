@@ -45,14 +45,11 @@ const HighlightsSection = styled.section`
   letter-spacing: 0.5px;
   margin-bottom: 30px;
   
-
 `
 
 const CarouselContainer = styled.div`
   width: 80vw;
   margin: 0 auto;
-
-  /* max-height:500px; */
   background-color: #F3F3F3;
   @media (max-width : 1200px) {
    max-height: 500px;
