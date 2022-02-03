@@ -8,6 +8,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { signIn } from "../redux/actions/authActions";
 import {useNavigate} from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+const ButtonLink = styled(Link)`
+width: 100%;
+`
 
 const Title = styled.h4`
 margin: 2rem 0;
@@ -20,10 +25,19 @@ margin: 2rem 0;
 const Button1 = styled(Button)`
 `
 
+const Line = styled.hr`
+    margin: 2rem 0;
+    height: 1px;
+    background-color: #c5c5c5;
+`
+
+
+
   const SignIn = () => {
     const auth= useSelector((state) => state.auth);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
 
     const [creds, setCreds] = useState({
       email: "",
@@ -42,7 +56,6 @@ const Button1 = styled(Button)`
   
   return (
     <>
-
       <Title1>Velkommen tilbake.</Title1>
       <Title>Her kan du logge inn.</Title>
     <Stack
@@ -71,6 +84,24 @@ const Button1 = styled(Button)`
         },
       }}>Logg inn</Button1>
     </Stack>
+    <Line/>
+    <Stack
+      sx={{
+        '& > :not(style)': { mb: 4, width: '100%' },
+      }}
+    >
+    <Title1>
+         Jeg er ny her
+         </Title1>
+        
+       <Button1  variant="contained" sx={{
+           bgcolor: "black", borderRadius: 0, ':hover': {
+           bgcolor: '#3f3f3f', 
+           color: 'white',
+            }, 
+            }}><ButtonLink to={"/signup"}>Register deg</ButtonLink></Button1>
+    </Stack>
+ 
     </>
   );
 }

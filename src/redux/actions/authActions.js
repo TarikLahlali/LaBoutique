@@ -16,9 +16,8 @@ export const signUp = (user) => {
       })
       .catch((error) => {
         console.log(error.response);
-        alert("use a valid email");
         toast.error(error.response?.data, {
-          position: toast.POSITION.BOTTOM_RIGHT,
+          position: toast.POSITION.TOP_RIGHT,
         });
       });
   };
@@ -40,7 +39,7 @@ export const signIn = (email, password) => {
         console.log(error.response);
 
         toast.error(error.response?.data, {
-          position: toast.POSITION.BOTTOM_RIGHT,
+          position: toast.POSITION.TOP_RIGHT,
         });
       });
   };

@@ -44,8 +44,9 @@ flex:1;
   @media (max-width : 1000px) {
   background-position: center;
   } ;
-
-
+  @media (max-width : 750px) {
+  background-position: top;
+  } ;
 
 `
 const DirectoryLink = styled(Link)`
@@ -68,7 +69,7 @@ const Button = styled.button`
       background-color: #292929;
       color: white;
     }
-    @media (max-width : 450px) {
+    @media (max-width : 650px) {
       margin-bottom : 10vh;
   
   } ;

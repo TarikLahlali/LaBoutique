@@ -44,19 +44,31 @@ const HighlightsSection = styled.section`
   text-align: center;
   letter-spacing: 0.5px;
   margin-bottom: 30px;
+  @media (max-width : 600px) {
+    max-height: 450px;
+
+  } ;
+ 
+
   
 `
 
 const CarouselContainer = styled.div`
-  width: 80vw;
+  width: 95vw;
   margin: 0 auto;
   background-color: #F3F3F3;
+
   @media (max-width : 1200px) {
    max-height: 500px;
-    width: 80vw;
+    width: 92vw;
   } ;
-  @media (max-width : 450px) {
-      /* margin: 0 10px 0 20px; */
+  @media (max-width : 900px) {
+    width: 89vw;
+  } ;
+  @media (max-width : 600px) {
+    width: 85vw;
+    max-height: 380px;
+
   } ;
  
 `
@@ -73,6 +85,10 @@ const CardDetails = styled.div`
   margin-top: 20px;
   opacity: 0;
   outline: none;
+  @media (max-width : 600px) {
+    max-height: 80px;
+
+  } ;
 
 `
 const CardWrapper = styled.div`
@@ -94,7 +110,9 @@ const Image = styled.img`
  height: 40vh;
  margin: 0 auto;
  max-height:320px;
-  
+ @media (max-width : 600px) {
+    max-height: 270px;
+  } ;
 
 `
 const Title = styled.h1`

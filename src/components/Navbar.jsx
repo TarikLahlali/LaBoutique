@@ -171,7 +171,7 @@ const Navbar = ({pos}) => {
 
 const handleSignOut = () => {
   dispatch(signOut());
-  navigate("/signin");
+  // navigate("/signin");
 };
 
  
